@@ -1,0 +1,797 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04BECD7C2AFA950A00AECC05 /* WeatherViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BECD7B2AFA950A00AECC05 /* WeatherViewModelTests.swift */; };
+		04BECD7E2AFA966400AECC05 /* LocationViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BECD7D2AFA966400AECC05 /* LocationViewModelTests.swift */; };
+		04F513C52AFA55F9002B38A9 /* AtmosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F513C42AFA55F9002B38A9 /* AtmosApp.swift */; };
+		04F513C92AFA55FB002B38A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F513C82AFA55FB002B38A9 /* Assets.xcassets */; };
+		04F513CC2AFA55FB002B38A9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F513CB2AFA55FB002B38A9 /* Preview Assets.xcassets */; };
+		04F513D62AFA55FB002B38A9 /* AtmosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F513D52AFA55FB002B38A9 /* AtmosTests.swift */; };
+		04F513E02AFA55FB002B38A9 /* AtmosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F513DF2AFA55FB002B38A9 /* AtmosUITests.swift */; };
+		04F513E22AFA55FB002B38A9 /* AtmosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F513E12AFA55FB002B38A9 /* AtmosUITestsLaunchTests.swift */; };
+		04F513F02AFA566F002B38A9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F513EF2AFA566F002B38A9 /* NetworkManager.swift */; };
+		04F513F32AFA569A002B38A9 /* NetworkEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F513F22AFA569A002B38A9 /* NetworkEnvironment.swift */; };
+		04F513F62AFA56B6002B38A9 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F513F52AFA56B6002B38A9 /* NetworkRequest.swift */; };
+		04F513F82AFA56D2002B38A9 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F513F72AFA56D2002B38A9 /* HTTPMethod.swift */; };
+		04F513FA2AFA56EE002B38A9 /* CodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F513F92AFA56EE002B38A9 /* CodingStrategy.swift */; };
+		04F513FE2AFA5715002B38A9 /* ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F513FD2AFA5715002B38A9 /* ModelMapper.swift */; };
+		04F514002AFA5763002B38A9 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F513FF2AFA5763002B38A9 /* Location.swift */; };
+		04F514022AFA577C002B38A9 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F514012AFA577C002B38A9 /* Weather.swift */; };
+		04F514052AFA57A9002B38A9 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F514042AFA57A9002B38A9 /* LocationService.swift */; };
+		04F514072AFA57BD002B38A9 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F514062AFA57BD002B38A9 /* WeatherService.swift */; };
+		04F5140A2AFA57EE002B38A9 /* LocationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F514092AFA57EE002B38A9 /* LocationRequest.swift */; };
+		04F5140C2AFA5805002B38A9 /* WeatherRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5140B2AFA5805002B38A9 /* WeatherRequest.swift */; };
+		04F514102AFA5850002B38A9 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5140F2AFA5850002B38A9 /* WeatherViewModel.swift */; };
+		04F514122AFA586B002B38A9 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F514112AFA586B002B38A9 /* WeatherView.swift */; };
+		04F514152AFA588B002B38A9 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F514142AFA588B002B38A9 /* LocationView.swift */; };
+		04F514172AFA58A1002B38A9 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F514162AFA58A1002B38A9 /* LocationViewModel.swift */; };
+		04F5141A2AFA5A05002B38A9 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F514192AFA5A05002B38A9 /* LocationManager.swift */; };
+		04F5141D2AFA5CCD002B38A9 /* AnimatedGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5141C2AFA5CCD002B38A9 /* AnimatedGradientView.swift */; };
+		04F514212AFA689E002B38A9 /* WindDirectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F514202AFA689D002B38A9 /* WindDirectionView.swift */; };
+		04F514242AFA7C25002B38A9 /* PrecipitationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F514232AFA7C25002B38A9 /* PrecipitationView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04F513D22AFA55FB002B38A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04F513B92AFA55F9002B38A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04F513C02AFA55F9002B38A9;
+			remoteInfo = Atmos;
+		};
+		04F513DC2AFA55FB002B38A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04F513B92AFA55F9002B38A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04F513C02AFA55F9002B38A9;
+			remoteInfo = Atmos;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04BECD7B2AFA950A00AECC05 /* WeatherViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModelTests.swift; sourceTree = "<group>"; };
+		04BECD7D2AFA966400AECC05 /* LocationViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModelTests.swift; sourceTree = "<group>"; };
+		04F513C12AFA55F9002B38A9 /* Atmos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Atmos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F513C42AFA55F9002B38A9 /* AtmosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmosApp.swift; sourceTree = "<group>"; };
+		04F513C82AFA55FB002B38A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04F513CB2AFA55FB002B38A9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		04F513D12AFA55FB002B38A9 /* AtmosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AtmosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F513D52AFA55FB002B38A9 /* AtmosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmosTests.swift; sourceTree = "<group>"; };
+		04F513DB2AFA55FB002B38A9 /* AtmosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AtmosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F513DF2AFA55FB002B38A9 /* AtmosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmosUITests.swift; sourceTree = "<group>"; };
+		04F513E12AFA55FB002B38A9 /* AtmosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		04F513EF2AFA566F002B38A9 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		04F513F22AFA569A002B38A9 /* NetworkEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEnvironment.swift; sourceTree = "<group>"; };
+		04F513F52AFA56B6002B38A9 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		04F513F72AFA56D2002B38A9 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		04F513F92AFA56EE002B38A9 /* CodingStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingStrategy.swift; sourceTree = "<group>"; };
+		04F513FD2AFA5715002B38A9 /* ModelMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelMapper.swift; sourceTree = "<group>"; };
+		04F513FF2AFA5763002B38A9 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		04F514012AFA577C002B38A9 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		04F514042AFA57A9002B38A9 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		04F514062AFA57BD002B38A9 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		04F514092AFA57EE002B38A9 /* LocationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRequest.swift; sourceTree = "<group>"; };
+		04F5140B2AFA5805002B38A9 /* WeatherRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRequest.swift; sourceTree = "<group>"; };
+		04F5140F2AFA5850002B38A9 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		04F514112AFA586B002B38A9 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		04F514142AFA588B002B38A9 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		04F514162AFA58A1002B38A9 /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
+		04F514192AFA5A05002B38A9 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		04F5141C2AFA5CCD002B38A9 /* AnimatedGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedGradientView.swift; sourceTree = "<group>"; };
+		04F5141E2AFA62B2002B38A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		04F514202AFA689D002B38A9 /* WindDirectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindDirectionView.swift; sourceTree = "<group>"; };
+		04F514232AFA7C25002B38A9 /* PrecipitationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrecipitationView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04F513BE2AFA55F9002B38A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F513CE2AFA55FB002B38A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F513D82AFA55FB002B38A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04F513B82AFA55F9002B38A9 = {
+			isa = PBXGroup;
+			children = (
+				04F513C32AFA55F9002B38A9 /* Atmos */,
+				04F513D42AFA55FB002B38A9 /* AtmosTests */,
+				04F513DE2AFA55FB002B38A9 /* AtmosUITests */,
+				04F513C22AFA55F9002B38A9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04F513C22AFA55F9002B38A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04F513C12AFA55F9002B38A9 /* Atmos.app */,
+				04F513D12AFA55FB002B38A9 /* AtmosTests.xctest */,
+				04F513DB2AFA55FB002B38A9 /* AtmosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04F513C32AFA55F9002B38A9 /* Atmos */ = {
+			isa = PBXGroup;
+			children = (
+				04F5141E2AFA62B2002B38A9 /* Info.plist */,
+				04F514182AFA59FA002B38A9 /* Utilities */,
+				04F5140D2AFA582D002B38A9 /* Views */,
+				04F514082AFA57DE002B38A9 /* NetworkRequests */,
+				04F513FB2AFA5706002B38A9 /* Models */,
+				04F513EE2AFA5614002B38A9 /* Network */,
+				04F513C42AFA55F9002B38A9 /* AtmosApp.swift */,
+				04F513C82AFA55FB002B38A9 /* Assets.xcassets */,
+				04F513CA2AFA55FB002B38A9 /* Preview Content */,
+			);
+			path = Atmos;
+			sourceTree = "<group>";
+		};
+		04F513CA2AFA55FB002B38A9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				04F513CB2AFA55FB002B38A9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		04F513D42AFA55FB002B38A9 /* AtmosTests */ = {
+			isa = PBXGroup;
+			children = (
+				04F513D52AFA55FB002B38A9 /* AtmosTests.swift */,
+				04BECD7B2AFA950A00AECC05 /* WeatherViewModelTests.swift */,
+				04BECD7D2AFA966400AECC05 /* LocationViewModelTests.swift */,
+			);
+			path = AtmosTests;
+			sourceTree = "<group>";
+		};
+		04F513DE2AFA55FB002B38A9 /* AtmosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04F513DF2AFA55FB002B38A9 /* AtmosUITests.swift */,
+				04F513E12AFA55FB002B38A9 /* AtmosUITestsLaunchTests.swift */,
+			);
+			path = AtmosUITests;
+			sourceTree = "<group>";
+		};
+		04F513EE2AFA5614002B38A9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				04F514032AFA5793002B38A9 /* Service */,
+				04F513F42AFA56AC002B38A9 /* Request */,
+				04F513F12AFA5684002B38A9 /* Environment */,
+				04F513EF2AFA566F002B38A9 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		04F513F12AFA5684002B38A9 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				04F513F22AFA569A002B38A9 /* NetworkEnvironment.swift */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		04F513F42AFA56AC002B38A9 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				04F513F52AFA56B6002B38A9 /* NetworkRequest.swift */,
+				04F513F72AFA56D2002B38A9 /* HTTPMethod.swift */,
+				04F513F92AFA56EE002B38A9 /* CodingStrategy.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		04F513FB2AFA5706002B38A9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04F513FC2AFA570B002B38A9 /* ModelMapper */,
+				04F513FF2AFA5763002B38A9 /* Location.swift */,
+				04F514012AFA577C002B38A9 /* Weather.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		04F513FC2AFA570B002B38A9 /* ModelMapper */ = {
+			isa = PBXGroup;
+			children = (
+				04F513FD2AFA5715002B38A9 /* ModelMapper.swift */,
+			);
+			path = ModelMapper;
+			sourceTree = "<group>";
+		};
+		04F514032AFA5793002B38A9 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				04F514042AFA57A9002B38A9 /* LocationService.swift */,
+				04F514062AFA57BD002B38A9 /* WeatherService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		04F514082AFA57DE002B38A9 /* NetworkRequests */ = {
+			isa = PBXGroup;
+			children = (
+				04F514092AFA57EE002B38A9 /* LocationRequest.swift */,
+				04F5140B2AFA5805002B38A9 /* WeatherRequest.swift */,
+			);
+			path = NetworkRequests;
+			sourceTree = "<group>";
+		};
+		04F5140D2AFA582D002B38A9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				04F514222AFA7C17002B38A9 /* PrecipitationView */,
+				04F5141F2AFA6892002B38A9 /* WindDirectionView */,
+				04F514132AFA587F002B38A9 /* LocationView */,
+				04F5140E2AFA5835002B38A9 /* WeatherView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		04F5140E2AFA5835002B38A9 /* WeatherView */ = {
+			isa = PBXGroup;
+			children = (
+				04F5141B2AFA5CC0002B38A9 /* SubViews */,
+				04F5140F2AFA5850002B38A9 /* WeatherViewModel.swift */,
+				04F514112AFA586B002B38A9 /* WeatherView.swift */,
+			);
+			path = WeatherView;
+			sourceTree = "<group>";
+		};
+		04F514132AFA587F002B38A9 /* LocationView */ = {
+			isa = PBXGroup;
+			children = (
+				04F514142AFA588B002B38A9 /* LocationView.swift */,
+				04F514162AFA58A1002B38A9 /* LocationViewModel.swift */,
+			);
+			path = LocationView;
+			sourceTree = "<group>";
+		};
+		04F514182AFA59FA002B38A9 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				04F514192AFA5A05002B38A9 /* LocationManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		04F5141B2AFA5CC0002B38A9 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				04F5141C2AFA5CCD002B38A9 /* AnimatedGradientView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		04F5141F2AFA6892002B38A9 /* WindDirectionView */ = {
+			isa = PBXGroup;
+			children = (
+				04F514202AFA689D002B38A9 /* WindDirectionView.swift */,
+			);
+			path = WindDirectionView;
+			sourceTree = "<group>";
+		};
+		04F514222AFA7C17002B38A9 /* PrecipitationView */ = {
+			isa = PBXGroup;
+			children = (
+				04F514232AFA7C25002B38A9 /* PrecipitationView.swift */,
+			);
+			path = PrecipitationView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04F513C02AFA55F9002B38A9 /* Atmos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04F513E52AFA55FB002B38A9 /* Build configuration list for PBXNativeTarget "Atmos" */;
+			buildPhases = (
+				04F513BD2AFA55F9002B38A9 /* Sources */,
+				04F513BE2AFA55F9002B38A9 /* Frameworks */,
+				04F513BF2AFA55F9002B38A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Atmos;
+			productName = Atmos;
+			productReference = 04F513C12AFA55F9002B38A9 /* Atmos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04F513D02AFA55FB002B38A9 /* AtmosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04F513E82AFA55FB002B38A9 /* Build configuration list for PBXNativeTarget "AtmosTests" */;
+			buildPhases = (
+				04F513CD2AFA55FB002B38A9 /* Sources */,
+				04F513CE2AFA55FB002B38A9 /* Frameworks */,
+				04F513CF2AFA55FB002B38A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04F513D32AFA55FB002B38A9 /* PBXTargetDependency */,
+			);
+			name = AtmosTests;
+			productName = AtmosTests;
+			productReference = 04F513D12AFA55FB002B38A9 /* AtmosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04F513DA2AFA55FB002B38A9 /* AtmosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04F513EB2AFA55FB002B38A9 /* Build configuration list for PBXNativeTarget "AtmosUITests" */;
+			buildPhases = (
+				04F513D72AFA55FB002B38A9 /* Sources */,
+				04F513D82AFA55FB002B38A9 /* Frameworks */,
+				04F513D92AFA55FB002B38A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04F513DD2AFA55FB002B38A9 /* PBXTargetDependency */,
+			);
+			name = AtmosUITests;
+			productName = AtmosUITests;
+			productReference = 04F513DB2AFA55FB002B38A9 /* AtmosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04F513B92AFA55F9002B38A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					04F513C02AFA55F9002B38A9 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					04F513D02AFA55FB002B38A9 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 04F513C02AFA55F9002B38A9;
+					};
+					04F513DA2AFA55FB002B38A9 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 04F513C02AFA55F9002B38A9;
+					};
+				};
+			};
+			buildConfigurationList = 04F513BC2AFA55F9002B38A9 /* Build configuration list for PBXProject "Atmos" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04F513B82AFA55F9002B38A9;
+			productRefGroup = 04F513C22AFA55F9002B38A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04F513C02AFA55F9002B38A9 /* Atmos */,
+				04F513D02AFA55FB002B38A9 /* AtmosTests */,
+				04F513DA2AFA55FB002B38A9 /* AtmosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04F513BF2AFA55F9002B38A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F513CC2AFA55FB002B38A9 /* Preview Assets.xcassets in Resources */,
+				04F513C92AFA55FB002B38A9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F513CF2AFA55FB002B38A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F513D92AFA55FB002B38A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04F513BD2AFA55F9002B38A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F513F02AFA566F002B38A9 /* NetworkManager.swift in Sources */,
+				04F5141D2AFA5CCD002B38A9 /* AnimatedGradientView.swift in Sources */,
+				04F513FE2AFA5715002B38A9 /* ModelMapper.swift in Sources */,
+				04F513F82AFA56D2002B38A9 /* HTTPMethod.swift in Sources */,
+				04F514072AFA57BD002B38A9 /* WeatherService.swift in Sources */,
+				04F514022AFA577C002B38A9 /* Weather.swift in Sources */,
+				04F514152AFA588B002B38A9 /* LocationView.swift in Sources */,
+				04F514242AFA7C25002B38A9 /* PrecipitationView.swift in Sources */,
+				04F514172AFA58A1002B38A9 /* LocationViewModel.swift in Sources */,
+				04F514002AFA5763002B38A9 /* Location.swift in Sources */,
+				04F514122AFA586B002B38A9 /* WeatherView.swift in Sources */,
+				04F514052AFA57A9002B38A9 /* LocationService.swift in Sources */,
+				04F513F32AFA569A002B38A9 /* NetworkEnvironment.swift in Sources */,
+				04F513FA2AFA56EE002B38A9 /* CodingStrategy.swift in Sources */,
+				04F514212AFA689E002B38A9 /* WindDirectionView.swift in Sources */,
+				04F514102AFA5850002B38A9 /* WeatherViewModel.swift in Sources */,
+				04F513C52AFA55F9002B38A9 /* AtmosApp.swift in Sources */,
+				04F5140A2AFA57EE002B38A9 /* LocationRequest.swift in Sources */,
+				04F5140C2AFA5805002B38A9 /* WeatherRequest.swift in Sources */,
+				04F5141A2AFA5A05002B38A9 /* LocationManager.swift in Sources */,
+				04F513F62AFA56B6002B38A9 /* NetworkRequest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F513CD2AFA55FB002B38A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04BECD7E2AFA966400AECC05 /* LocationViewModelTests.swift in Sources */,
+				04F513D62AFA55FB002B38A9 /* AtmosTests.swift in Sources */,
+				04BECD7C2AFA950A00AECC05 /* WeatherViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F513D72AFA55FB002B38A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F513E02AFA55FB002B38A9 /* AtmosUITests.swift in Sources */,
+				04F513E22AFA55FB002B38A9 /* AtmosUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04F513D32AFA55FB002B38A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04F513C02AFA55F9002B38A9 /* Atmos */;
+			targetProxy = 04F513D22AFA55FB002B38A9 /* PBXContainerItemProxy */;
+		};
+		04F513DD2AFA55FB002B38A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04F513C02AFA55F9002B38A9 /* Atmos */;
+			targetProxy = 04F513DC2AFA55FB002B38A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		04F513E32AFA55FB002B38A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04F513E42AFA55FB002B38A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04F513E62AFA55FB002B38A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Atmos/Preview Content\"";
+				DEVELOPMENT_TEAM = P9A8S6RRZW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Atmos/Info.plist;
+				INFOPLIST_KEY_NSLocationUsageDescription = "Atmos wants to use location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Atmos wants to use your location.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rajat.Atmos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04F513E72AFA55FB002B38A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Atmos/Preview Content\"";
+				DEVELOPMENT_TEAM = P9A8S6RRZW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Atmos/Info.plist;
+				INFOPLIST_KEY_NSLocationUsageDescription = "Atmos wants to use location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Atmos wants to use your location.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rajat.Atmos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		04F513E92AFA55FB002B38A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P9A8S6RRZW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rajat.AtmosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Atmos.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Atmos";
+			};
+			name = Debug;
+		};
+		04F513EA2AFA55FB002B38A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P9A8S6RRZW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rajat.AtmosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Atmos.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Atmos";
+			};
+			name = Release;
+		};
+		04F513EC2AFA55FB002B38A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P9A8S6RRZW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rajat.AtmosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Atmos;
+			};
+			name = Debug;
+		};
+		04F513ED2AFA55FB002B38A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P9A8S6RRZW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rajat.AtmosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Atmos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04F513BC2AFA55F9002B38A9 /* Build configuration list for PBXProject "Atmos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F513E32AFA55FB002B38A9 /* Debug */,
+				04F513E42AFA55FB002B38A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04F513E52AFA55FB002B38A9 /* Build configuration list for PBXNativeTarget "Atmos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F513E62AFA55FB002B38A9 /* Debug */,
+				04F513E72AFA55FB002B38A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04F513E82AFA55FB002B38A9 /* Build configuration list for PBXNativeTarget "AtmosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F513E92AFA55FB002B38A9 /* Debug */,
+				04F513EA2AFA55FB002B38A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04F513EB2AFA55FB002B38A9 /* Build configuration list for PBXNativeTarget "AtmosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F513EC2AFA55FB002B38A9 /* Debug */,
+				04F513ED2AFA55FB002B38A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04F513B92AFA55F9002B38A9 /* Project object */;
+}

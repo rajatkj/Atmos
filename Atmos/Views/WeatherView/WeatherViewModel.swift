@@ -42,6 +42,7 @@ class WeatherViewModel {
         do {
             let location = getCurrentCoordinates()
             weather = try await service.getWeather(lat: location.lat, long: location.long)
+            
         } catch let error {
             print(error)
         }

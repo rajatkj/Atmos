@@ -92,7 +92,7 @@ struct WindDirectionView: View {
             Arrow(insetAmount: 16)
                 .strokeBorder(.white, style: StrokeStyle(lineWidth: 2, lineCap: .round, lineJoin: .round))
                 .frame(width: 30, height: 80)
-                .rotationEffect(.degrees(Double(weather.current.windDirection10M)))
+                .rotationEffect(.degrees(Double(weather.current.windDirection10M + 180)))
 
         }
     }

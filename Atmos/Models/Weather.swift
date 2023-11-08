@@ -75,3 +75,11 @@ struct CurrentUnits: Codable {
     
     static var preview = CurrentUnits(time: "m", interval: "m", temperature2M: "c", apparentTemperature: "c", rain: "m", cloudCover: "mm", windDirection10M: "m/s", windGusts10M: "m/s", windSpeed10M: "m/s")
 }
+
+extension Double {
+    
+    var kmphToMph: Double {
+        let conversionFactor = 0.621371
+        return self * conversionFactor
+    }
+}

@@ -43,14 +43,14 @@ struct WindDirectionView: View {
 //            Direction(Double(weather.current.windDirection10M)).rawValue.capitalized
            
                 HStack {
-                    Text("\(Int(weather.current.windSpeed10M))")
+                    Text("\(Int(weather.current.windSpeed10M.kmphToMph))")
                         .font(.system(size: 32))
                         .fontWeight(.bold)
                         .foregroundStyle(.white)
                         .padding(.top, 4.0)
                     
                     VStack(alignment: .leading) {
-                        Text("\(weather.currentUnits.windSpeed10M)")
+                        Text("MPH")
                             .font(.caption)
                             .foregroundStyle(.white)
                             .padding(.top, 4.0)
@@ -66,13 +66,13 @@ struct WindDirectionView: View {
                 .frame(height: 1.0)
                 .padding(.vertical, 8.0)
             HStack {
-                Text("\(Int(weather.current.windGusts10M))")
+                Text("\(Int(weather.current.windGusts10M.kmphToMph))")
                     .font(.system(size: 32))
                     .fontWeight(.bold)
                     .foregroundStyle(.white)
                     .padding(.top, 4.0)
                 VStack(alignment: .leading) {
-                    Text("\(weather.currentUnits.windGusts10M)")
+                    Text("MPH")
                         .font(.caption)
                         .foregroundStyle(.white)
                         .padding(.top, 4.0)
